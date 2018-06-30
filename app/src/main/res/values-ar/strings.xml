@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name"> تطبيق رقوش</string>
+    <string name="splash_text">رقوش المتجر الأول للكتب</string>
+    <string name="intro_text">هذا النص نص مثال لا علاقة له بالمحتوى أو بتطبيق. فقط هو قالب لرؤية الشكل العام لشاشة وسيتم ضبطه فيما بعد</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">رقم الجوال أو البريد الإلكتروني</string>
+    <string name="prompt_password">كلمة المرور</string>
+    <string name="action_sign_in">دخول</string>
+    <string name="action_send">أرسل</string>
+    <string name="msg_reset_pwd">أدخل البريد الإلكتروني الذي قمت بتسجيل من خلاله</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_register">إنشاء حساب جديد</string>
+    <string name="action_forget_pwd">نسيت كلمة المرور ؟</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+</resources>

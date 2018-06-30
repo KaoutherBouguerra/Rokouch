@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_margin_register">5.0dip</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="dimen_fp_margin">15dp</dimen>
+    <dimen name="dimen_fp_margin_top">15dp</dimen>
+    <dimen name="fp_font_size">16sp</dimen>
+    <dimen name="custom_my_location_button_size">15dp</dimen>
+    <dimen name="margin_smallest">5dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+
+
+    <dimen name="design_navigation_icon_size" tools:override="true">16dp</dimen>
+
+    <dimen name="activity_size">14dp</dimen>
+    <dimen name="activity_drawable_padding">10dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_vertical_top_margin">26dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+
+</resources>
