@@ -2,7 +2,10 @@ package com.zedney.rokouch.adapters;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +14,10 @@ import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.zedney.rokouch.LoginActivity;
+import com.zedney.rokouch.MainActivity;
 import com.zedney.rokouch.R;
+import com.zedney.rokouch.fragments.intro_fragments.SelectedBookFragment;
 import com.zedney.rokouch.models.Book;
 import com.zedney.rokouch.models.Category;
 
@@ -95,7 +101,22 @@ public class CategoriesListAdapter extends BaseAdapter {
         _bookTitle.setText(book.getTitle());
         _bookPrice.setText(book.getPrice());
 
+        v.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showFragment(new SelectedBookFragment());
+            }
+        });
 
+
+    }
+
+    private void showFragment(Fragment fragment) {
+        FragmentManager fragmentManager = ((FragmentActivity) _mContext).getSupportFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.content_frame, fragment)
+                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                .commit();
     }
 
     public void clear() {

@@ -11,7 +11,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
-import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.zedney.rokouch.R;
@@ -25,7 +24,7 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class BooksCateroriesFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener,ViewTreeObserver.OnScrollChangedListener {
+public class BooksCateroriesFragmentBib extends Fragment implements SwipeRefreshLayout.OnRefreshListener,ViewTreeObserver.OnScrollChangedListener {
 
 
 
@@ -33,7 +32,7 @@ public class BooksCateroriesFragment extends Fragment implements SwipeRefreshLay
     private ListView listView;
     private CategoriesListAdapter adapter;
     private SwipeRefreshLayout swipeRefreshLayout;
-    private static final String TAG = BooksCateroriesFragment.class.getSimpleName();
+    private static final String TAG = BooksCateroriesFragmentBib.class.getSimpleName();
     private List<Category> myOrdersList = new ArrayList<Category>();
 
 
@@ -41,7 +40,7 @@ public class BooksCateroriesFragment extends Fragment implements SwipeRefreshLay
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        v = inflater.inflate(R.layout.fragment_books_caterories, container, false);
+        v = inflater.inflate(R.layout.fragment_books_caterories_bib, container, false);
 
 
         listView = (ListView) v.findViewById(R.id.list);

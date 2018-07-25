@@ -86,9 +86,15 @@ public class LoginActivity extends AppCompatActivity {
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(intent);
-                //attemptLogin();
+                if (mEmailView.getText().equals("admin")) {
+                    Intent intent = new Intent(LoginActivity.this, MainActivityBib.class);
+                    startActivity(intent);
+                } else {
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(intent);
+                    //attemptLogin();
+                }
+
             }
         });
 
