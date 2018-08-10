@@ -1,4 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
 
+        android:title="الرئيسية"
+        android:icon="@mipmap/fav"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/white"/>
+    <item
+        android:id="@+id/action_most_popular"
+        android:enabled="true"
+        android:icon="@mipmap/fav"
+        android:title="المفضلة"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/white"/>
+    <item
+        android:id="@+id/booked"
+        android:enabled="true"
+        android:icon="@mipmap/fav"
+        android:title="طلباتي"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/white"/>
+    <item
+        android:id="@+id/panier"
+        android:enabled="true"
+        android:icon="@mipmap/fav"
+        android:title="سلتي"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/white"/>
+    <item
+        android:id="@+id/offers"
+        android:enabled="true"
+        android:icon="@mipmap/fav"
+        android:title="العروض "
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/white"
+        />
+    <item
+        android:id="@+id/notif"
+        android:enabled="true"
+        android:icon="@mipmap/fav"
+        android:title="اشعارات"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/white"/>
+    <item
+        android:id="@+id/account"
+        android:enabled="true"
+        android:icon="@mipmap/fav"
+        android:title="حسابي"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/white"/>
+    <item
+        android:id="@+id/contact"
+        android:enabled="true"
+        android:icon="@mipmap/call"
+        android:title="تواصل معنا"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/white"/>
+    <item
+        android:id="@+id/logout"
+        android:enabled="true"
+        android:icon="@mipmap/fav"
+        android:title="تسجيل الخروج"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/white"/>
 </menu>

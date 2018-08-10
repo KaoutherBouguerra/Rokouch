@@ -21,11 +21,13 @@
             android:layout_gravity="left">
 
             <ImageView
+                android:id="@+id/plus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/plus"
                 android:padding="6dp"/>
             <TextView
+                android:id="@+id/nb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="2"
@@ -34,6 +36,7 @@
                 android:padding="6dp"/>
 
             <ImageView
+                android:id="@+id/moins"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/minus"
@@ -56,7 +59,7 @@
         android:id="@+id/shop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="اطلب الآن"
+        android:text="إتمام الطلب"
         android:background="@color/colorPrimary"
         android:layout_above="@+id/add"
         android:layout_marginLeft="23dp"
@@ -70,7 +73,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="قارن بين المكتبات"
+        android:text="أضف إلى السلة و تابع الشراء"
         android:background="@color/colorAccent"
         android:layout_marginLeft="23dp"
         android:layout_marginRight="23dp"

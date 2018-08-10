@@ -1,6 +1,7 @@
 package com.zedney.rokouch.fragments.intro_fragments;
 
 
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -26,6 +27,7 @@ import java.util.List;
 public class SelectedBookFragment extends Fragment {
 
     Button shopBtn;
+    Button compareBtn;
     LinearLayout commentsLayout;
     View view;
     ExpandableListAdapter listAdapter;
@@ -40,7 +42,12 @@ public class SelectedBookFragment extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_selected_book, container, false);
         shopBtn = (Button) view.findViewById(R.id.shop);
+        compareBtn = (Button) view.findViewById(R.id.compare);
         commentsLayout = (LinearLayout) view.findViewById(R.id.commentsLayout);
+
+        ActionBar ab = getActivity().getActionBar();
+
+        getActivity().setTitle("إسم الكتاب");
         // get the listview
         expListView = (ExpandableListView) view.findViewById(R.id.lvExp);
 
@@ -51,10 +58,17 @@ public class SelectedBookFragment extends Fragment {
 
         // setting list adapter
         expListView.setAdapter(listAdapter);
+
         shopBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showFragment(new Details_request_book());
+            }
+        });
+        compareBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showFragment(new PaymentFragment());
             }
         });
         commentsLayout.setOnClickListener(new View.OnClickListener() {

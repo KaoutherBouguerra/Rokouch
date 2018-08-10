@@ -23,7 +23,7 @@
         app:menu="@menu/drawer_view"
         app:itemIconTint="@color/colorAccent"
         android:background="@color/colorAccent"
-        app:headerLayout="@layout/nav_header">
+        app:headerLayout="@layout/nav_header_bib">
 
     </android.support.design.widget.NavigationView>
 

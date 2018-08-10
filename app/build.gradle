@@ -8,7 +8,9 @@ android {
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        resValue "string", "google_maps_key", (project.findProperty("GOOGLE_MAPS_API_KEY") ?: "")
     }
     buildTypes {
         release {
@@ -21,11 +23,13 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:27.1.1'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
     implementation 'com.android.support:support-v4:27.1.1'
     implementation 'com.android.support:design:27.1.1'
     implementation 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
     implementation 'com.romandanylyk:pageindicatorview:0.1.1@aar'
+    implementation 'com.google.android.gms:play-services:9.8.0'
+    implementation "com.daimajia.swipelayout:library:1.2.0@aar"
     testImplementation 'junit:junit:4.12'
     implementation 'com.github.paolorotolo:appintro:4.1.0'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'

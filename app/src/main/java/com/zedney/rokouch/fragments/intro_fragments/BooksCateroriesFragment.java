@@ -1,6 +1,7 @@
 package com.zedney.rokouch.fragments.intro_fragments;
 
 
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -42,7 +43,9 @@ public class BooksCateroriesFragment extends Fragment implements SwipeRefreshLay
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         v = inflater.inflate(R.layout.fragment_books_caterories, container, false);
+        ActionBar ab = getActivity().getActionBar();
 
+        getActivity().setTitle("التصنيفات");
 
         listView = (ListView) v.findViewById(R.id.list);
         swipeRefreshLayout = (SwipeRefreshLayout) v.findViewById(R.id.swipe_refresh_layout);
